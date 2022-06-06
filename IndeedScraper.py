@@ -50,7 +50,7 @@ def main(position: str, location: str):
         # While loop continues to run until there are no more pages left in the job search
         try:
             url = 'https://www.indeed.com' + full_page.find("a", {"aria-label": "Next"}).get("href")
-            infos.append[url]
+            infos.append(url)
         except AttributeError:
             break
     # Creates csv of job scraping 
